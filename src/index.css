@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark: hsl(223 100% 96%);
+  --bg: hsl(223 100% 100%);
+  --bg-light: hsl(223 100% 100%);
+  --text: hsl(257 100% 11%);
+  --text-muted: hsl(229 62% 38%);
+  --border: hsl(225 68% 61%);
+  --border-muted: hsl(225 100% 73%);
+  --primary: hsl(229 62% 38%);
+  --secondary: hsl(42 100% 12%);
+  --highlight: hsl(217 100% 100%);
+  --border-card: solid 1px var(--border);
+  --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-light));
+  --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
+  --shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 4px 4px hsla(0, 0%, 0%, 0.15);
+
+}
+
+@font-face {
+    font-family: Inder;
+    src: url("../src/assets/fonts/Inder-Regular.ttf")
+}
+
+@theme {
+    --font-inder: Inder
+}
+
+@layer base {
+  body {
+    @apply font-inder;
+  }
+}
