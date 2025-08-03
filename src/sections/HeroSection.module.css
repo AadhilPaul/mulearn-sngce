@@ -1,0 +1,25 @@
+.heroSection {
+  margin-top: 5rem;
+}
+
+.content {
+  width: 70vw;
+  max-width: 70vh;
+  text-align: center;
+}
+.title {
+  font-size: 3.815rem;
+  color: var(--text);
+  max-width: 100%;
+}
+
+.title span{
+    color: var(--text-muted)
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+

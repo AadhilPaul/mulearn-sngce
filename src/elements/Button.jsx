@@ -11,7 +11,7 @@ export const PrimaryButton = ({ children, ...rest }) => {
       onMouseLeave={(e) => setIsHover(false)}
       whileHover={{
         boxShadow: "var(--shadow)",
-        y: -2
+        y: -2,
       }}
       whileTap={{
         scale: 0.98,
@@ -20,8 +20,8 @@ export const PrimaryButton = ({ children, ...rest }) => {
     >
       <motion.span animate={{ x: isHover ? 0 : 10 }}>{children}</motion.span>
       <motion.span
-        animate={{ x: isHover ? 0 : 50 }}
-        transition={{ duration: 0.2}}
+        animate={{ x: isHover ? 0 : 50, opacity: isHover ? 1 : 0 }}
+        transition={{ duration: 0.2 }}
         className={styles.icon}
       >
         <ArrowTopRightOnSquareIcon />
@@ -33,7 +33,12 @@ export const PrimaryButton = ({ children, ...rest }) => {
 export const SecondaryButton = ({ children, ...rest }) => {
   return (
     <motion.button
-      whileHover={{ backgroundColor: "var(--bg-dark)", border: '2px solid var(--border)', y: -2, boxShadow: "var(--shadow)" }}
+      whileHover={{
+        backgroundColor: "var(--bg-dark)",
+        border: "2px solid var(--border)",
+        y: -2,
+        boxShadow: "var(--shadow)",
+      }}
       whileTap={{ scale: 0.98 }}
       className={styles.secondaryButton}
     >
@@ -42,3 +47,19 @@ export const SecondaryButton = ({ children, ...rest }) => {
   );
 };
 
+export const NavbarButton = ({ children, ...rest }) => {
+  return (
+    <motion.button
+      whileHover={{
+        boxShadow: "var(--shadow)",
+        y: -2,
+      }}
+      whileTap={{
+        scale: 0.98,
+      }}
+      className={styles.primaryButton}
+    >
+      {children}
+    </motion.button>
+  );
+};

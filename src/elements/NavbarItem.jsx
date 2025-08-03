@@ -1,8 +1,8 @@
 import { useState } from "react";
-import styles from "./NavbarButton.module.css";
+import styles from "./NavbarItem.module.css";
 import { motion } from "framer-motion";
 
-export const NavbarButton = ({ children, ...rest }) => {
+export const NavbarItem = ({ children, ...rest }) => {
   const [isHover, setIsHover] = useState(false);
   return (
     <motion.div
@@ -17,7 +17,7 @@ export const NavbarButton = ({ children, ...rest }) => {
       className={styles.title}>{children}</motion.span>
       <motion.div
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        initial={{ scaleX: 0 }}
+        initial={{ scaleX: 0}}
         animate={{ scaleX: isHover ? 1 : 0 }}
         className={styles.line}
       ></motion.div>

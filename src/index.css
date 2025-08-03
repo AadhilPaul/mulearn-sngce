@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 :root {
---bg-dark: hsl(219 100% 96%);
---bg: hsl(219 100% 100%);
---bg-light: hsl(219 100% 100%);
---text: hsl(261 100% 13%);
---text-muted: hsl(222 99% 35%);
---highlight: hsl(220 100% 100%);
---border: hsl(221 91% 60%);
---border-muted: hsl(221 100% 72%);
---primary: hsl(222 99% 35%);
---secondary: hsl(35 100% 13%);
---danger: hsl(4 99% 37%);
---warning: hsl(50 100% 12%);
---success: hsl(159 100% 9%);
---info: hsl(215 95% 42%);
+  --bg-dark: hsl(219 100% 96%);
+  --bg: hsl(219 100% 100%);
+  --bg-light: hsl(219 100% 100%);
+  --text: hsl(261 100% 13%);
+  --text-muted: hsl(222 99% 35%);
+  --highlight: hsl(220 100% 100%);
+  --border: hsl(221 91% 60%);
+  --border-muted: hsl(221 100% 72%);
+  --primary: hsl(222 99% 35%);
+  --secondary: hsl(35 100% 13%);
+  --danger: hsl(4 99% 37%);
+  --warning: hsl(50 100% 12%);
+  --success: hsl(159 100% 9%);
+  --info: hsl(215 95% 42%);
   --border-card: solid 1px var(--border);
   --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-light));
   --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
@@ -34,8 +34,9 @@
 
 @layer base {
   body {
-    transition: background 0.3s ease, color 0.3s ease;
-
+    @apply font-inder;
+  }
+  button {
     @apply font-inder;
   }
 }

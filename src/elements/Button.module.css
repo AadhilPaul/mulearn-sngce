@@ -10,7 +10,7 @@
   font-weight: 500;
   font-size: 16px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   outline: none;
   box-shadow: 2px 2px var(--shadow);
 }
@@ -18,6 +18,7 @@
 
 .secondaryButton {
   background-color: var(--bg);
+  border-radius: 10px;
   color: var(--text);
   padding: 12px 14px;
   cursor: pointer;
@@ -25,6 +26,19 @@
   font-size: 16px;
   border: 2px solid var(--border-muted);
   outline: none;
+}
+
+.navbarButton {
+  background-color: var(--primary);
+  padding: 12px 14px;
+  cursor: pointer;
+  color: var(--bg);
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  box-shadow: 2px 2px var(--shadow);
 }
 
 .icon {
