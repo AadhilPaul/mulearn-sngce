@@ -8,5 +8,8 @@ module.exports = {
     extend: {
     },
   },
+  corePlugins: {
+    fontWeight: true, // <-- make sure this is not disabled
+  },
   plugins: [],
 }

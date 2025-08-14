@@ -4,7 +4,7 @@
 
 .content {
   width: 70vw;
-  max-width: 70vh;
+  max-width: 100vh;
   text-align: center;
 }
 .title {
@@ -14,7 +14,11 @@
 }
 
 .title span{
-    color: var(--text-muted)
+    color: var(--text);
+    border: 1px solid black;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    padding: 4px 2px;
 }
 
 .subtitle {

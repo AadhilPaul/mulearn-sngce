@@ -5,40 +5,45 @@
   gap: 5px;
   background-color: var(--primary);
   padding: 12px 14px;
+  box-shadow: var(--shadow);
   cursor: pointer;
-  color: var(--bg);
-  font-weight: 500;
-  font-size: 16px;
-  border: none;
-  border-radius: 10px;
-  outline: none;
-  box-shadow: 2px 2px var(--shadow);
+  color: var(--text);
+  font-size: 14px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
 }
 
 
 .secondaryButton {
-  background-color: var(--bg);
-  border-radius: 10px;
-  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: var(--secondary);
   padding: 12px 14px;
+  box-shadow: var(--shadow);
   cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  border: 2px solid var(--border-muted);
+  color: var(--text);
+  font-size: 14px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
   outline: none;
 }
 
-.navbarButton {
-  background-color: var(--primary);
+.regularButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: var(--bg);
   padding: 12px 14px;
+  box-shadow: var(--shadow);
   cursor: pointer;
-  color: var(--bg);
-  font-weight: 500;
-  font-size: 16px;
-  border: none;
-  border-radius: 50px;
+  color: var(--text);
+  font-size: 14px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
   outline: none;
-  box-shadow: 2px 2px var(--shadow);
 }
 
 .icon {

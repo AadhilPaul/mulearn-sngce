@@ -17,11 +17,11 @@ export const HeroSection = () => {
       >
         <div className={styles.content}>
           <h1 className={styles.title}>
-            Discover.<span>Collaborate.</span> Evolve.
+            Building a <span>Peer-Learning</span> Culture Together
           </h1>
-          <p className={styles.subtitle}>
+          <h3 className={styles.subtitle}>
             μLearn at Sree Narayana Gurukulam College of Engineering
-          </p>
+          </h3>
         </div>
         <Flex gap={30} justify="center" align="center">
           <PrimaryButton>Meet the team</PrimaryButton>

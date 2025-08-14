@@ -3,40 +3,114 @@
 @tailwind utilities;
 
 :root {
-  --bg-dark: hsl(219 100% 96%);
-  --bg: hsl(219 100% 100%);
-  --bg-light: hsl(219 100% 100%);
-  --text: hsl(261 100% 13%);
-  --text-muted: hsl(222 99% 35%);
-  --highlight: hsl(220 100% 100%);
-  --border: hsl(221 91% 60%);
-  --border-muted: hsl(221 100% 72%);
-  --primary: hsl(222 99% 35%);
-  --secondary: hsl(35 100% 13%);
-  --danger: hsl(4 99% 37%);
-  --warning: hsl(50 100% 12%);
-  --success: hsl(159 100% 9%);
-  --info: hsl(215 95% 42%);
-  --border-card: solid 1px var(--border);
-  --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-light));
-  --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
-  --shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 4px 4px hsla(0, 0%, 0%, 0.15);
+  /* Backgrounds */
+  --bg-dark: #e3dff2; /* soft lavender-gray */
+  --bg: #f9f4f3; /* clean white */
+  --bg-light: #fcdfff; /* very light pinkish lavender */
+
+  /* Text */
+  --text: #1a0938; /* deep purple-black */
+  --text-muted: #7f7a91; /* muted lavender-gray */
+
+  /* Borders & Shadows */
+  --border: #000000; /* pure black */
+  --border-muted: #c4a1ff; /* pastel purple */
+  --border-card: solid 2px var(--border);
+  --shadow: 4px 4px 0px 0px var(--border);
+
+  /* Brand & Actions */
+  --primary: #a76dff; /* bold brutalist purple */
+  --secondary: #d1f400; /* warm mustard yellow */
+  --highlight: #ffdb58; /* bright yellow highlight */
+
+  /* States */
+  --danger: #ff6b6b; /* brutal red-pink */
+  --warning: #ffd96c; /* playful yellow */
+  --success: #90ee90; /* pastel green */
+  --info: #69d2e7; /* bright cyan-blue */
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("../src/assets/fonts/archivo/Archivo-Thin.ttf");
+  font-weight: 100;
 }
 
 @font-face {
-  font-family: Inder;
-  src: url("../src/assets/fonts/Inder-Regular.ttf");
+  font-family: "Archivo";
+  src: url("../src/assets/fonts/archivo/Archivo-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../src/assets/fonts/archivo/Archivo-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../src/assets/fonts/archivo/Archivo-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../src/assets/fonts/archivo/Archivo-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../src/assets/fonts/archivo/Archivo-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../src/assets/fonts/archivo/ArchivoBlack.ttf");
+  font-weight: 900;
 }
 
 @theme {
-  --font-inder: Inder;
+  --font-archivo: "Archivo";
+
+  --weight-thin: 100;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-black: 900;
 }
 
 @layer base {
   body {
-    @apply font-inder;
+    font-family: var(--font-archivo);
+    font-weight: var(--weight-normal);
   }
+
+  h1 {
+    font-family: var(--font-archivo);
+    font-weight: var(--weight-black);
+  }
+
+  h2 {
+    font-family: var(--font-archivo);
+    font-weight: var(--weight-bold);
+  }
+
+  h3 {
+    font-family: var(--font-archivo);
+    font-weight: var(--weight-semibold);
+  }
+
   button {
-    @apply font-inder;
+    font-family: var(--font-archivo);
+    font-weight: var(--weight-medium);
+  }
+
+  p {
+    font-family: var(--font-archivo);
+    font-weight: var(--weight-thin);
   }
 }

@@ -1,16 +1,15 @@
 .navbar {
+  width: 100%;
+  border-bottom: 2px solid var(--border);
+  background-color: var(--bg);
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
 }
 .navbarInner {
-  margin: 1.2rem 0;
   box-sizing: border-box;
-  background-color: var(--bg-light);
-  border-radius: 10px;
-  box-shadow: var(--shadow);
+  background-color: var(--bg);
   width: 70%;
-  padding: 1rem 0;
 }
 
 .logo {
