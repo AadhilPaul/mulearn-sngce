@@ -6,7 +6,6 @@
   background-color: var(--primary);
   padding: 12px 14px;
   box-shadow: var(--shadow);
-  cursor: pointer;
   color: var(--text);
   font-size: 14px;
   border: 2px solid var(--border);
@@ -22,7 +21,6 @@
   background-color: var(--secondary);
   padding: 12px 14px;
   box-shadow: var(--shadow);
-  cursor: pointer;
   color: var(--text);
   font-size: 14px;
   border: 2px solid var(--border);
@@ -38,7 +36,6 @@
   background-color: var(--bg);
   padding: 12px 14px;
   box-shadow: var(--shadow);
-  cursor: pointer;
   color: var(--text);
   font-size: 14px;
   border: 2px solid var(--border);
