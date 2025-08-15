@@ -1,7 +1,5 @@
 import styles from "./Button.module.css";
 import { motion } from "framer-motion";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/16/solid";
-import { useState } from "react";
 
 export const PrimaryButton = ({ children, ...rest }) => {
   return (

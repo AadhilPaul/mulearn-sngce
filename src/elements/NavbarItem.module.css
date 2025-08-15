@@ -2,13 +2,19 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
-  display: flex;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.title {
-  font-weight: var(--weight-semibold);
-  font-size: 16px;
-  padding: 10px 8px;
-  color: var(--text);
+.underline {
+  position: absolute;
+  transform-origin: left;
+  left: 0;
+  bottom: 0;
+  background-color: var(--border);
+  height: 3px;
+  width: 100%;
 }
+
 

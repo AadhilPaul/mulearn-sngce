@@ -1,16 +1,20 @@
 .navbar {
   width: 100%;
-  border-bottom: 2px solid var(--border);
+  border-bottom: 2px dashed var(--border);
   background-color: var(--bg);
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .navbarInner {
   box-sizing: border-box;
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbarItems {

@@ -1,6 +1,7 @@
 import styles from "./HeroSection.module.css";
 import { PrimaryButton, SecondaryButton } from "../elements/Button";
-import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
+import image from "../assets/images/hero2.jpeg";
+import { motion } from "framer-motion";
 
 export const HeroSection = () => {
   return (
@@ -14,13 +15,16 @@ export const HeroSection = () => {
           <h3 className={styles.subtitle}>
             μLearn at Sree Narayana Gurukulam College of Engineering
           </h3>
+          <div className={styles.buttons}>
+            <PrimaryButton>Meet the team</PrimaryButton>
+            <SecondaryButton>View our Events</SecondaryButton>
+          </div>
         </div>
-        <div className={styles.buttons}>
-          <PrimaryButton>
-            Meet the team
-            <ArrowRightCircleIcon className={styles.icon} />
-          </PrimaryButton>
-          <SecondaryButton>View our Events</SecondaryButton>
+        <div className={styles.images}>
+          <motion.img
+            src={image}
+            animate={{ rotate: 10, filter: "brightness(1.2)"}}
+          />
         </div>
       </div>
     </>

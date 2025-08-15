@@ -1,6 +1,5 @@
 import { NavbarItem } from "../elements/NavbarItem";
 import { RegularButton } from "../elements/Button";
-import { Logo } from "../elements/Logo";
 import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
@@ -14,6 +13,8 @@ export const Navbar = () => {
           <NavbarItem>Gallery</NavbarItem>
           <NavbarItem>Meet the team</NavbarItem>
           <NavbarItem>Contact Us</NavbarItem>
+        </div>
+        <div>
           <RegularButton>Join Mulearn</RegularButton>
         </div>
       </div>
