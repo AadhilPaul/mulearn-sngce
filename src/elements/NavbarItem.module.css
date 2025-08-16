@@ -7,14 +7,4 @@
   border-top-right-radius: 5px;
 }
 
-.underline {
-  position: absolute;
-  transform-origin: left;
-  left: 0;
-  bottom: 0;
-  background-color: var(--border);
-  height: 3px;
-  width: 100%;
-}
-
 

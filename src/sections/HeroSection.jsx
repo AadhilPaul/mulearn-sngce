@@ -1,6 +1,6 @@
 import styles from "./HeroSection.module.css";
 import { PrimaryButton, SecondaryButton } from "../elements/Button";
-import image from "../assets/images/hero2.jpeg";
+import image from "../assets/images/hero3.jpg";
 import { motion } from "framer-motion";
 
 export const HeroSection = () => {
@@ -23,7 +23,8 @@ export const HeroSection = () => {
         <div className={styles.images}>
           <motion.img
             src={image}
-            animate={{ rotate: 10, filter: "brightness(1.2)"}}
+
+            animate={{ rotate: 10}}
           />
         </div>
       </div>

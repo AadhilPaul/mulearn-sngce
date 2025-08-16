@@ -1,0 +1,43 @@
+.about {
+  margin-top: 64px;
+}
+
+.title {
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 4px solid var(--danger);
+  font-size: var(--h4);
+}
+
+.aboutBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  border: 2px solid var(--border);
+  background-color: var(--bg);
+  box-shadow: var(--shadow);
+  gap: 2rem;
+}
+
+.content {
+  width: 50%;
+  text-align: left;
+  line-height: 2.2;
+  color: var(--text);
+}
+
+.images {
+  flex: 0 0 auto;
+}
+
+.content p {
+    font-size: var(--p);
+}
+
+.images img {
+  height: 15rem;
+  width: 15rem;
+  box-shadow: var(--shadow);
+  border: 2px solid var(--border);
+}

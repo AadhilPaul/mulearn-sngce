@@ -1,0 +1,37 @@
+.eventsSection {
+  margin-top: 64px;
+}
+
+.title {
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 4px solid var(--danger);
+  font-size: var(--h4);
+}
+.events {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 24px;
+}
+
+.eventCard {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--border);
+  height: 15rem;
+  box-shadow: var(--shadow);
+}
+
+.img {
+  flex: 9;
+  border-bottom: 2px solid var(--border);
+}
+
+.eventTitle {
+  flex: 1;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 12px 16px;
+}
