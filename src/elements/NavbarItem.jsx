@@ -9,10 +9,6 @@ export const NavbarItem = ({ children, ...rest }) => {
       onMouseEnter={(e) => setIsHover(true)}
       onMouseLeave={(e) => setIsHover(false)}
       className={styles.navItem}
-      animate={{
-        padding: 8,
-        backgroundColor: isHover ? "#DAF5f0" : "var(--bg)",
-      }}
     >
       {children}
     </motion.div>

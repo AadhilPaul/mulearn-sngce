@@ -1,6 +1,6 @@
 import styles from "./HeroSection.module.css";
 import { PrimaryButton, SecondaryButton } from "../elements/Button";
-import image from "../assets/images/hero3.jpg";
+import image from "../assets/images/hero.jpeg";
 import { motion } from "framer-motion";
 
 export const HeroSection = () => {
@@ -9,8 +9,7 @@ export const HeroSection = () => {
       <div className={styles.heroSection}>
         <div className={styles.content}>
           <h1 className={styles.title}>
-            Building a <span>Peer-Learning</span> Culture Together.
-            {/* Discover. <span>Collaborate. </span>Evolve. */}
+            Growing a Space for <span>Creativity </span>Together
           </h1>
           <h3 className={styles.subtitle}>
             μLearn at Sree Narayana Gurukulam College of Engineering
@@ -21,11 +20,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className={styles.images}>
-          <motion.img
-            src={image}
-
-            animate={{ rotate: 10}}
-          />
+          <motion.img src={image} animate={{ rotate: 10, }} />
         </div>
       </div>
     </>

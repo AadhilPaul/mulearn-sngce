@@ -11,7 +11,7 @@
 .events {
   margin-top: 32px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 24px;
 }
@@ -21,6 +21,7 @@
   flex-direction: column;
   border: 2px solid var(--border);
   height: 15rem;
+  border-radius: 10px;
   box-shadow: var(--shadow);
 }
 

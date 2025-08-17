@@ -9,7 +9,7 @@ export const EventsSection = () => {
     { title: "Event One", color: "var(--danger)" },
     { title: "Event Two", color: "var(--info)" },
     { title: "Event Three", color: "var(--success)" },
-    { title: "Event Four", color: "var(--warning)" },
+    // { title: "Event Four", color: "var(--warning)" },
   ];
   return (
     <div className={styles.eventsSection}>
