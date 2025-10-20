@@ -8,10 +8,10 @@ export const NumbersSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const numbers = [
-    { number: 160, title: "Students Enrolled", color: "var(--danger)" },
+    { number: 390, title: "Students Enrolled", color: "var(--danger)" },
     { number: 25, title: "Learning Circles", color: "var(--info)" },
     { number: 5, title: "Interest Groups", color: "var(--success)" },
-    { number: 45000, title: "Karma Mined", color: "var(--warning)" },
+    { number: "306k", title: "Karma Mined", color: "var(--warning)" },
   ];
 
   return (
