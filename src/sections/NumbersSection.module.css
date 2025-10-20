@@ -1,0 +1,12 @@
+.numbersSection {
+  width: 100%;
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}

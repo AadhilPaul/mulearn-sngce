@@ -1,0 +1,35 @@
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem 0;
+  position: relative;
+  width: 100%;
+}
+
+bold {
+  font-size: 1.25rem;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: var(--border);
+  border: none;
+}
+
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+  margin: 0 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  background-color: var(--highlight);
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}

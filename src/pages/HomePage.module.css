@@ -1,4 +1,9 @@
 .heroContainer {
-    margin: 0 20rem;
-    padding-bottom: 12rem;
+  margin: 0 10rem;
+}
+
+@media (max-width: 480px) {
+  .heroContainer {
+    margin: 0 1.125rem;
+  }
 }

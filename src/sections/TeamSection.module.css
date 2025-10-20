@@ -1,0 +1,20 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem;
+  justify-content: center;
+
+}
+
+.leadGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.75rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+}
+
+

@@ -4,8 +4,8 @@
 
 :root {
   /* Backgrounds */
-  --bg-dark: #ecf3f9;
-  --bg: #fff4e8;
+  --bg-dark: #f5e7cf;
+  --bg: #faf4ed;
   --bg-light: #f4f5f0;
 
   /* Text */
@@ -17,6 +17,8 @@
   --border-muted: #c4a1ff;
   --border-card: solid 2px var(--border);
   --shadow: 4px 4px 0px 0px var(--border);
+  --card-border: #212121;
+  --muted: #6b7280;
 
   /* Brand & Actions */
   --primary: #a76dff;
@@ -71,7 +73,8 @@
 
 @font-face {
   font-family: "Archivo";
-  src: url("../src/assets/fonts/archivo/Archivo-ExtraBold.ttf") format("truetype");
+  src: url("../src/assets/fonts/archivo/Archivo-ExtraBold.ttf")
+    format("truetype");
   font-weight: 800;
 }
 
@@ -94,6 +97,11 @@
 }
 
 @layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
   body {
     background-color: var(--bg);
     font-family: var(--font-archivo);
@@ -122,6 +130,13 @@
 
   p {
     font-family: var(--font-archivo);
-    font-weight: var(--weight-thin);
+    font-weight: var(--weight-normal);
+  }
+  @media (max-width: 480px) {
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
   }
 }
