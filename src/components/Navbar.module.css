@@ -104,4 +104,8 @@
     transition: 0.1s;
     transform: translateX(5px);
   }
+
+  .joinBtn {
+    display: none;
+  }
 }

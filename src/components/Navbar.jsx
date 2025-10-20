@@ -28,14 +28,16 @@ export const Navbar = () => {
           <NavbarItem>Contact Us</NavbarItem>
         </div>
 
-        <a
-          href="https://mulearn.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: "none" }}
-        >
-          <RegularButton>Join μLearn</RegularButton>
-        </a>
+        <div className={styles.joinBtn}>
+          <a
+            href="https://mulearn.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <RegularButton>Join μLearn</RegularButton>
+          </a>
+        </div>
 
         {/* Right side: Join button + hamburger (mobile) */}
         {/* Hamburger mobile */}
@@ -69,6 +71,7 @@ export const Navbar = () => {
 
               <div className={styles.mobileLinks}>
                 <Link
+                  onClick={() => setMenuOpen(false)}
                   to="heroSection"
                   smooth={true}
                   duration={600}
@@ -77,6 +80,7 @@ export const Navbar = () => {
                   <NavbarItem>Home</NavbarItem>
                 </Link>
                 <Link
+                  onClick={() => setMenuOpen(false)}
                   to="aboutSection"
                   smooth={true}
                   duration={600}
@@ -85,6 +89,7 @@ export const Navbar = () => {
                   <NavbarItem>About Us</NavbarItem>
                 </Link>
                 <Link
+                  onClick={() => setMenuOpen(false)}
                   to="teamSection"
                   smooth={true}
                   duration={600}
