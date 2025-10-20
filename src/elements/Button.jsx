@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 export const PrimaryButton = ({ children, ...rest }) => {
   return (
     <motion.button
+      {...rest}
       whileHover={{
         boxShadow: "none",
         x: 4,
@@ -26,6 +27,7 @@ export const PrimaryButton = ({ children, ...rest }) => {
 export const SecondaryButton = ({ children, ...rest }) => {
   return (
     <motion.button
+      {...rest}
       whileHover={{
         boxShadow: "none",
         x: 4,
@@ -47,6 +49,7 @@ export const SecondaryButton = ({ children, ...rest }) => {
 export const RegularButton = ({ children, ...rest }) => {
   return (
     <motion.button
+      {...rest}
       whileHover={{
         boxShadow: "none",
         x: 4,
@@ -65,12 +68,12 @@ export const RegularButton = ({ children, ...rest }) => {
   );
 };
 
-export const CTAButton = ({children, ...rest}) => {
+export const CTAButton = ({ children, ...rest }) => {
   const [isHover, setIsHover] = useState(false);
   return (
     <motion.button
-    onMouseEnter={e => setIsHover(true)}
-    onMouseLeave={e => setIsHover(false)}
+      onMouseEnter={(e) => setIsHover(true)}
+      onMouseLeave={(e) => setIsHover(false)}
       className={styles.CTAButton}
       whileHover={{
         x: 4,
@@ -89,8 +92,7 @@ export const CTAButton = ({children, ...rest}) => {
         transition={{ duration: 0.4, ease: "easeInOut" }}
       />
 
-      <motion.span
-       className={styles.text}>{children}</motion.span>
+      <motion.span className={styles.text}>{children}</motion.span>
     </motion.button>
-  )
-}
+  );
+};

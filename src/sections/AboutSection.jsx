@@ -11,6 +11,7 @@ import poster from "../assets/images/posters/poster8.jpeg";
 export const AboutSection = () => {
   return (
     <motion.div
+    id="aboutSection"
       className={styles.about}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +39,14 @@ export const AboutSection = () => {
             new ideas, μLearn is the space where passion meets possibility.
           </span>
           <br />
-          <RegularButton>Join Our Discord</RegularButton>
+          <a
+            href="https://discord.gg/Gnz3ejSR"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <RegularButton>Join Our Discord</RegularButton>
+          </a>
         </div>
         <div className={styles.images}>
           <img src={poster} alt="" />

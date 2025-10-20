@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavbarItem } from "../elements/NavbarItem";
 import { RegularButton } from "../elements/Button";
+import { Link } from "react-scroll";
 import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
@@ -14,12 +15,27 @@ export const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className={styles.navbarItems}>
-          <NavbarItem>Home</NavbarItem>
-          <NavbarItem>About Us</NavbarItem>
-          <NavbarItem>Gallery</NavbarItem>
-          <NavbarItem>Meet the team</NavbarItem>
+          <Link to="heroSection" smooth={true} duration={600} offset={-50}>
+            <NavbarItem>Home</NavbarItem>
+          </Link>
+          <Link to="aboutSection" smooth={true} duration={600} offset={-50}>
+            <NavbarItem>About Us</NavbarItem>
+          </Link>
+          <Link to="teamSection" smooth={true} duration={600} offset={-50}>
+            <NavbarItem>Meet the team</NavbarItem>
+          </Link>
+
           <NavbarItem>Contact Us</NavbarItem>
         </div>
+
+        <a
+          href="https://mulearn.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <RegularButton>Join μLearn</RegularButton>
+        </a>
 
         {/* Right side: Join button + hamburger (mobile) */}
         {/* Hamburger mobile */}
@@ -41,23 +57,55 @@ export const Navbar = () => {
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
-            <button
-              className={styles.closeBtn}
-              onClick={() => setMenuOpen(false)}
-            >
-              ✕
-            </button>
+            <div>
+              <div className={styles.menuHeader}>
+                <button
+                  className={styles.closeBtn}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  ✕
+                </button>
+              </div>
 
-            <div className={styles.mobileLinks}>
-              <NavbarItem>Home</NavbarItem>
-              <NavbarItem>About Us</NavbarItem>
-              <NavbarItem>Gallery</NavbarItem>
-              <NavbarItem>Meet the team</NavbarItem>
-              <NavbarItem>Contact Us</NavbarItem>
+              <div className={styles.mobileLinks}>
+                <Link
+                  to="heroSection"
+                  smooth={true}
+                  duration={600}
+                  offset={-50}
+                >
+                  <NavbarItem>Home</NavbarItem>
+                </Link>
+                <Link
+                  to="aboutSection"
+                  smooth={true}
+                  duration={600}
+                  offset={-50}
+                >
+                  <NavbarItem>About Us</NavbarItem>
+                </Link>
+                <Link
+                  to="teamSection"
+                  smooth={true}
+                  duration={600}
+                  offset={-50}
+                >
+                  <NavbarItem>Meet the team</NavbarItem>
+                </Link>
+
+                <NavbarItem>Contact Us</NavbarItem>
+              </div>
             </div>
 
             <div className={styles.mobileJoinButton}>
-              <RegularButton>Join μLearn</RegularButton>
+              <a
+                href="https://mulearn.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                <RegularButton>Join μLearn</RegularButton>
+              </a>
             </div>
           </motion.div>
         )}

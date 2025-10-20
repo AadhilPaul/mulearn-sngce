@@ -9,7 +9,7 @@ export const Mulearn = () => {
         src="https://www.youtube.com/embed/ehdSEL_s050?si=QKn4mAgqM26NEAC_"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </div>
   );

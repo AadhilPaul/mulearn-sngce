@@ -1,4 +1,6 @@
 import styles from "./HeroSection.module.css";
+
+import { Link } from "react-scroll";
 import { PrimaryButton, SecondaryButton } from "../elements/Button";
 import { motion } from "framer-motion";
 import {
@@ -22,10 +24,10 @@ const socials = [
   },
 ];
 
-export const HeroSection = () => {
+export const HeroSection = ({ scrollToTeam }) => {
   return (
     <>
-      <div className={styles.heroSection}>
+      <div id="heroSection" className={styles.heroSection}>
         <div className={styles.icons}>
           {/* {socials.map((item, i) => (
             <motion.span
@@ -54,7 +56,9 @@ export const HeroSection = () => {
           <span className={styles.title}>
             Innovation Begins With Curiosity And Community
           </span>
-          <h2 className={styles.collegeName}>Sree Narayana Gurukulam College of Engineering</h2>
+          <h2 className={styles.collegeName}>
+            Sree Narayana Gurukulam College of Engineering
+          </h2>
           <h3 className={styles.subtitle}>
             At μLearn SNGCE, we're building more than just skills—we're building
             a culture. A place where students share ideas, take on challenges,
@@ -63,8 +67,13 @@ export const HeroSection = () => {
             come together.
           </h3>
           <div className={styles.buttons}>
-            <PrimaryButton>Meet our team</PrimaryButton>
-            <SecondaryButton>View our Events</SecondaryButton>
+            <Link to="teamSection" smooth={true} duration={600} offset={-50}>
+              <PrimaryButton>Meet our team</PrimaryButton>
+            </Link>
+
+            <Link to="eventSection" smooth={true} duration={600} offset={-50}>
+              <SecondaryButton>View our Events</SecondaryButton>
+            </Link>
           </div>
         </div>
       </div>

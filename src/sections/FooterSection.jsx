@@ -9,82 +9,99 @@ import { motion } from "framer-motion";
 
 export const FooterSection = () => {
   const socials = [
-    { name: "discord", link: "discord.com", src: DiscordIcon },
-    { name: "github", link: "github.com", src: GithubIcon },
-    { name: "linkedin", link: "linkedin.com", src: LinkedInIcon },
-    { name: "instagram", link: "instagram.com", src: InstagramIcon },
+    { name: "discord", link: "https://discord.gg/Gnz3ejSR", src: DiscordIcon },
+    {
+      name: "github",
+      link: "https://github.com/gtech-mulearn",
+      src: GithubIcon,
+    },
+    {
+      name: "linkedin",
+      link: "http://www.linkedin.com/company/gtechmulearn/",
+      src: LinkedInIcon,
+    },
+    {
+      name: "instagram",
+      link: "https://www.instagram.com/mulearn_sngce/",
+      src: InstagramIcon,
+    },
   ];
   return (
     <>
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
-
-        <div className={styles.content}>
-          <div>
-            <h1>MULEARN SNG</h1>
-            <h5>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae odit, nostrum nesciunt alias voluptatem libero ex,
-              vitae laborum illum eos minima beatae provident fugit. Odit
-              dolorum unde veritatis ipsa dolor?
-            </h5>
+          <div className={styles.content}>
+            <div>
+              <h1>MULEARN SNG</h1>
+              <h5>
+                μLearn is a student-led community dedicated to curiosity,
+                collaboration, and creativity. Join us to explore new ideas,
+                learn by doing, and connect with like-minded peers.
+              </h5>
+            </div>
+            <div className={styles.socials}>
+              {socials.map((social, index) => {
+                const Icon = social.src;
+                return (
+                  <a
+                    href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                    key={index}
+                  >
+                    <motion.button
+                      whileHover={{
+                        boxShadow: "none",
+                        x: 4,
+                        y: 4,
+                      }}
+                      transition={{
+                        duration: 0.1,
+                      }}
+                      whileTap={{
+                        scale: 0.98,
+                      }}
+                    >
+                      <Icon className="text-xl" />
+                    </motion.button>
+                  </a>
+                );
+              })}
+            </div>
           </div>
-          <div className={styles.socials}>
-            {socials.map((social, index) => {
-              const Icon = social.src;
-              return (
-                <motion.button
-                  whileHover={{
-                    boxShadow: "none",
-                    x: 4,
-                    y: 4,
-                  }}
-                  transition={{
-                    duration: 0.1,
-                  }}
-                  whileTap={{
-                    scale: 0.98,
-                  }}
-                  key={index}
-                >
-                  <Icon className="text-xl" />
-                </motion.button>
-              );
-            })}
-          </div>
-        </div>
-        <div className={styles.links}>
-          <h3>Quick Links</h3>
+          <div className={styles.links}>
+            <h3>Quick Links</h3>
 
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Gallery</li>
-            <li>Events</li>
-          </ul>
-        </div>
-        <div className={styles.links}>
-          <h3>Community</h3>
-          <ul>
-            <li>Join Discord</li>
-            <li>Workshops</li>
-            <li>Events</li>
-            <li>Mentorship</li>
-          </ul>
-        </div>
-        <div className={styles.links}>
-          <h3>Resources</h3>
-          <ul>
-            <li>Leanring Materials</li>
-            <li>Project Ideas</li>
-            <li>Tech Talks</li>
-            <li>Career Guidance</li>
-          </ul>
-        </div>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Gallery</li>
+              <li>Events</li>
+            </ul>
+          </div>
+          <div className={styles.links}>
+            <h3>Community</h3>
+            <ul>
+              <li>Join Discord</li>
+              <li>Workshops</li>
+              <li>Events</li>
+              <li>Mentorship</li>
+            </ul>
+          </div>
+          <div className={styles.links}>
+            <h3>Resources</h3>
+            <ul>
+              <li>Leanring Materials</li>
+              <li>Project Ideas</li>
+              <li>Tech Talks</li>
+              <li>Career Guidance</li>
+            </ul>
+          </div>
         </div>
         <div className={styles.credit}>
           <hr />
-          <p>© 2025 µLearn SNGCE. Made with {'<3'} by Aadhil Paul CT</p>
+          <p>© 2025 µLearn SNGCE. Made by Aadhil Paul CT</p>
         </div>
       </footer>
     </>
